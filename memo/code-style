@@ -1,0 +1,38 @@
+1. ;で次の行を処理することは行わない
+   ;は書かない
+
+2. 無駄な()などは書かない
+   if (x and y)
+
+3. 関数のデフォルト引数などの=は詰める(前後に空白を入れない)
+
+4. =は揃えない
+   x = 1
+   yzz = 2
+
+5. グローバルな定義クラスの間は2つ改行を入れる。
+   関数は1つ改行を入れる。
+   importの下も2つ改行を入れる。
+
+6. 文字列の結合
+   word = 'hello'
+   word2 = '!'
+
+   new_word = '{} test {}'.format(word, word2)
+   new_word = word + word
+
+   # forで繰り返す場合
+   long_word = []
+   for word in ['test', 'test1', 'test3']:
+       long_word.append("{}aaaabbbbb".format(word))")
+   new_word = ''.join(long_word)
+   # メモリのパフォーマンス上、こちらの方が良い
+
+   # 以下はダメ
+   long_word = ''
+   for word in ['test', 'test1', 'test3']:
+       long_word += "{}aaaabbbbb".format(word))")
+
+7. importを,で区切らない
+
+8.pythonはdocstringを書く
